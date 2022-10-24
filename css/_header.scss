@@ -1,0 +1,128 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  @media screen and (max-width: 834px) {
+    height: 80px;
+  }
+}
+
+.header-inner {
+  padding: 0 40px;
+  @media screen and (max-width:834px) {
+    padding: 0 20px;
+  }
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin: 20px 0 0;
+  @media screen and (max-width: 834px) {
+      white-space: nowrap;
+      line-height: 2;
+    }
+}
+.pc-nav-list {
+  display: flex;
+  margin: 30px 0 0;
+  color: #186334;
+}
+.pc-nav-item {
+  padding-right: 40px;
+  padding-bottom: 20px;
+  transition: all 0.5s ease-out;
+  &:hover {
+    transform: scale(1.25);
+    color: #62b380;
+  }
+}
+@media screen and (max-width: 834px) {
+  .pc-nav {
+    display: none;
+  }
+}
+
+/*===================================
+# spスタイル
+====================================*/
+
+// ハンバーガーメニューの外見
+  .hamburger {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #186334;
+    z-index: 100;
+    @media screen and (min-width: 835px) {
+      display: none;
+    }
+
+    span {
+      position: absolute;
+      top: 20px;
+      left: 10px;
+      width: 40px;
+      height: 2px;
+      background-color: #fff;
+      /* ふわっと表示 */
+      transition: transform 0.5s;
+      &:nth-of-type(1) {
+        top: 20px;
+      }
+      &:nth-of-type(2) {
+        top: 30px;
+      }
+      &:nth-of-type(3) {
+        top: 40px;
+      }
+    }
+  }
+  .hamburger.active span {
+    &:nth-of-type(1) {
+      transform: translateY(10px) rotate(45deg);
+    }
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
+        &:nth-of-type(3) {
+          transform: translateY(-10px) rotate(-45deg);
+        }
+  }
+
+  // ハンバーガーメニューの中身
+  .sp-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #ffffffe6;
+    color: #186334;
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+    /* ふわっと表示 */
+      transition: 0.5s ease-in-out;
+    @media screen and (min-width: 835px) {
+      display: none;
+    }
+  }
+  .sp-nav.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .sp-nav-list {
+    width: 480px;
+    margin: 120px auto;
+  }
+  .sp-nav-item {
+    margin-bottom: 40px;
+    text-align: center;
+  }

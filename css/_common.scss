@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #000;
+  // background: #fff;
+  font-family: 'Montserrat','Noto Sans JP','sans-serif';
+  letter-spacing: 0.08em;
+  font-weight: normal;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.content-title {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 32px;
+}
+
+.content-body {
+  margin-top: 32px;
+}
+
+.content-innerText {
+  padding-top: 32px;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1080px;
+}

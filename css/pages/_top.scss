@@ -1,0 +1,51 @@
+/*===================================
+# ファーストビュー
+====================================*/
+// .MainVisual {
+//   display: flex;
+//   justify-content: center;
+//   overflow-x: hidden;
+//   img {
+//     height: 100vh;
+//     flex-shrink: 0;
+//     object-fit: cover;
+//   }
+// }
+
+
+// .MainVisual {
+//   position: relative;
+//   height: 400px;
+//   img {
+//     position: absolute;
+//     opacity: 0;
+//     transition: all 1s ease-in-out;
+//     height: 100%;
+//     object-fit: contain;
+//   }
+// }
+
+
+/*===================================
+# Pickup
+====================================*/
+.Pickup-area {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Pickup-item {
+  padding: 0 20px;
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+/*===================================
+# info
+====================================*/
+.info-area {
+  display: flex;
+  li {
+    padding: 0 30px;
+  }
+}
