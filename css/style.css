@@ -455,6 +455,10 @@ h2 {
   max-width: 1080px;
 }
 
+.section-wrapper {
+  margin-top: 96px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -645,12 +649,11 @@ main {
 
 .Pickup-area {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .Pickup-item {
-  padding: 0 20px;
   margin-bottom: 16px;
   font-size: 12px;
 }
