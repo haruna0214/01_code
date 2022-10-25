@@ -20,7 +20,7 @@ header {
 .site-title {
   font-weight: 700;
   font-size: 2.2rem;
-  margin: 20px 0 0;
+  padding: 20px 0 0;
   @media screen and (max-width: 834px) {
       white-space: nowrap;
       line-height: 2;
@@ -33,7 +33,7 @@ header {
 }
 .pc-nav-item {
   padding-right: 40px;
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
   transition: all 0.5s ease-out;
   &:hover {
     transform: scale(1.25);

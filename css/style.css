@@ -417,6 +417,11 @@ li {
   list-style: none;
 }
 
+@media screen and (max-width: 834px) {
+  img {
+    max-width: 100%;
+  }
+}
 body {
   font-size: 1.6rem;
   color: #000;
@@ -476,7 +481,7 @@ header {
 .site-title {
   font-weight: 700;
   font-size: 2.2rem;
-  margin: 20px 0 0;
+  padding: 20px 0 0;
 }
 @media screen and (max-width: 834px) {
   .site-title {
@@ -493,7 +498,6 @@ header {
 
 .pc-nav-item {
   padding-right: 40px;
-  padding-bottom: 20px;
   transition: all 0.5s ease-out;
 }
 .pc-nav-item:hover {
@@ -591,9 +595,54 @@ header {
 /*===================================
 # ファーストビュー
 ====================================*/
+main {
+  padding-top: 120px;
+}
+
+.main-wrapper {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.main-inner {
+  padding: 0 40px;
+  position: relative;
+}
+@media screen and (max-width: 834px) {
+  .main-inner {
+    padding: 0 20px;
+  }
+}
+
+.main-img {
+  width: 100%;
+  max-width: 1080px;
+  height: 600px;
+}
+
+.main-message {
+  position: absolute;
+  top: 350px;
+  left: 130px;
+  width: 150px;
+  height: 150px;
+}
+@media screen and (max-width: 834px) {
+  .main-message {
+    left: 70px;
+  }
+}
+
 /*===================================
 # Pickup
 ====================================*/
+.Pickup {
+  width: 84%;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .Pickup-area {
   display: flex;
   justify-content: center;

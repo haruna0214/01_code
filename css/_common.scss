@@ -14,6 +14,11 @@ ul,
 li {
   list-style: none;
 }
+@media screen and (max-width:834px) {
+  img {
+    max-width: 100%;
+  }
+}
 
 body {
   font-size: 1.6rem;

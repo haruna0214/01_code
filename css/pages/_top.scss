@@ -1,34 +1,47 @@
 /*===================================
 # ファーストビュー
 ====================================*/
-// .MainVisual {
-//   display: flex;
-//   justify-content: center;
-//   overflow-x: hidden;
-//   img {
-//     height: 100vh;
-//     flex-shrink: 0;
-//     object-fit: cover;
-//   }
-// }
-
-
-// .MainVisual {
-//   position: relative;
-//   height: 400px;
-//   img {
-//     position: absolute;
-//     opacity: 0;
-//     transition: all 1s ease-in-out;
-//     height: 100%;
-//     object-fit: contain;
-//   }
-// }
-
+main {
+  padding-top: 120px;
+}
+.main-wrapper {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.main-inner {
+  padding: 0 40px;
+  position: relative;
+    @media screen and (max-width:834px) {
+      padding: 0 20px;
+    }
+}
+.main-img {
+  width: 100%;
+  max-width: 1080px;
+  height: 600px;
+  // height: calc(100vh - 80px);
+  // object-fit: fill;
+}
+.main-message {
+  position: absolute;
+  top: 350px;
+    left: 130px;
+  width: 150px;
+  height: 150px;
+  @media screen and (max-width:834px) {
+    left: 70px;
+  }
+}
 
 /*===================================
 # Pickup
 ====================================*/
+.Pickup {
+  width: 84%;
+  text-align: center;
+  margin: 0 auto;
+}
 .Pickup-area {
   display: flex;
   justify-content: center;
