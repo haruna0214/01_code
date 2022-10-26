@@ -448,6 +448,16 @@ h2 {
 
 .content-innerText {
   padding-top: 32px;
+  font-size: 1.8rem;
+}
+.content-innerText p::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(../image/icon.svg) no-repeat;
+  background-size: contain;
+  margin-right: 6px;
 }
 
 .wrapper {
@@ -652,10 +662,22 @@ main {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 834px) {
+  .Pickup-area {
+    gap: 10px;
+  }
+}
 
 .Pickup-item {
   margin-bottom: 16px;
   font-size: 12px;
+}
+@media screen and (max-width: 834px) {
+  .Pickup-item {
+    padding: 0 8px;
+    margin-bottom: 8px;
+    width: calc(33% - 8px);
+  }
 }
 
 /*===================================

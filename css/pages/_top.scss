@@ -46,10 +46,18 @@ main {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  @media screen and (max-width:834px) {
+    gap: 10px;
+  }
 }
 .Pickup-item {
   margin-bottom: 16px;
   font-size: 12px;
+  @media screen and (max-width:834px) {
+    padding: 0 8px;
+    margin-bottom: 8px;
+    width: calc(33% - 8px);
+  }
 }
 
 /*===================================
