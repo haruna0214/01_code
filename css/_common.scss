@@ -46,6 +46,16 @@ h2 {
 
 .content-innerText {
   padding-top: 32px;
+  font-size: 1.8rem;
+  p::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../image/icon.svg) no-repeat;
+    background-size: contain;  // 要素の領域に画像全体を収めるため
+    margin-right: 6px;
+  }
 }
 .wrapper {
   width: 100%;
