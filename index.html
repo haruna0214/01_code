@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Freely inc. | TOP</title>
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -107,18 +108,27 @@
 
     <!-- 開始 info -->
     <section class="info section-wrapper">
-      <div class="content-title">
-        <h2>お知らせ</h2>
-      </div>
-      <div class="content-body">
-        <ul class="info-area">
-          <li><a href="#"><img src="./image/info-item_01.jpg" width="450" height="280" alt="お知らせ1"></a></li>
-          <li><a href="#"><img src="./image/info-item_02.jpg" width="450" height="280" alt="お知らせ2"></a></li>
-          <li><a href="#"><img src="./image/info-item_03.jpg" width="450" height="280" alt="お知らせ3"></a></li>
-          <li><a href="#"><img src="./image/info-item_04.jpg" width="450" height="280" alt="お知らせ4"></a></li>
-        </ul>
-        <div class="content-innerText">
-          <p>キャンペーン・イベント</p>
+      <div class="info-inner">
+        <div class="content-title">
+          <h2>お知らせ</h2>
+        </div>
+        <div class="content-body">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#"><img src="image/info-item_01.jpg" alt="お知らせ画像1"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="image/info-item_02.jpg" alt="お知らせ画像2"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="image/info-item_03.jpg" alt="お知らせ画像3"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="image/info-item_04.jpg" alt="お知らせ画像4"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="image/info-item_05.jpg" alt="お知らせ画像5"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="image/info-item_06.jpg" alt="お知らせ画像6"></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="content-innerText">
+            <p>キャンペーン・イベント</p>
+          </div>
         </div>
       </div>
     </section>
@@ -230,8 +240,6 @@
       <div class="content-innerText">
         <p>レシピ</p>
       </div>
-
-
     </section>
     <!-- 終了 recipe -->
 
@@ -304,6 +312,7 @@
 
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="js/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 
 </body>
