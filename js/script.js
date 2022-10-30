@@ -37,8 +37,37 @@ thumbs.forEach(function(item, index) {
 });
 
 /*===================================
-#
+# info
+swiper.jsでスライダーを実装
 ====================================*/
+
+  // 初期化
+  const swiper = new Swiper(".swiper" , {
+    direction: "horizontal",
+    // ループ
+    loop: true,
+    autoplay: {
+      delay: 2500,
+    },
+    // 動き方
+    effect: "fade",
+    // 速さ
+    speed: 2000,
+    // 画面にスライドを何枚表示させるか
+    // slidesPerView: 1,
+    // slidesPerViewと合わせて使う 左右に画像を少し表示するかしないか、デフォルトはfalse
+    // centeredSlides: true,
+    // ページネーションの記述
+    pagination: {
+      el: ".swiper-pagination"
+    }
+    // ナビボタンの記述
+    // navigation: {
+    //   nextEl: "swiper-button-next",
+    //   prevEl: "swiper-button-prev"
+    // }
+  });
+
 
 
 
