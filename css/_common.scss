@@ -48,6 +48,23 @@ h2 {
   padding-top: 32px;
   font-size: 1.8rem;
   text-align: center;
+
+  .link-btn {
+    display: inline-block;
+    padding: 8px;
+    color: #aeaeae;
+    background-color: #f5f5f5;
+    max-width: 50%;
+    border: 1px solid #aeaeae;
+    transition: 1s all;
+    border-radius: 8px;
+    &:hover {
+      color: #fff;
+      background-color: #b22222a6;
+      transform: translateY(10px);
+      border: none;
+    }
+  }
   p::before {
     content: "";
     display: inline-block;
@@ -58,6 +75,15 @@ h2 {
     margin-right: 6px;
   }
 }
+// .{
+//   transition: 0.5s;
+//   transform: scale(1);
+//   background: #abcf3e;
+//   &:hover {
+//     transform: scale(1.2);
+//     background: #3fc90b;
+//   }
+// }
 .wrapper {
   width: 100%;
   max-width: 1080px;
