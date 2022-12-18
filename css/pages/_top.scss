@@ -154,6 +154,11 @@ main {
   display: block;
   margin: auto;
 }
+.recipe-subitem {
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+}
 
 .recipe-item {
   display: inline-block;
