@@ -798,4 +798,50 @@ main {
 .news-Text {
   width: 100%;
   padding-top: 8px;
+}
+
+/*===================================
+# recipe
+====================================*/
+.recipe-mainitem img {
+  display: block;
+  margin: auto;
+}
+
+.recipe-item {
+  display: inline-block;
+}
+
+.recipe-image {
+  cursor: pointer;
+  background: gray;
+}
+.recipe-image img {
+  opacity: 0.4;
+}
+
+/*===================================# kodawari====================================*/
+.inner-color {
+  background-color: #f0fff1;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.kodawari-area {
+  display: flex;
+  justify-content: center;
+}
+
+.kodawari-item {
+  padding: 0 12px;
+}
+
+.kodawari-text p {
+  font-size: 18px;
+  text-align: center;
+}
+@media screen and (max-width: 834px) {
+  .kodawari-text p {
+    white-space: nowrap;
+  }
 }/*# sourceMappingURL=style.css.map */
