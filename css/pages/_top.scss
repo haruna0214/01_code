@@ -155,19 +155,23 @@ main {
   margin: auto;
 }
 .recipe-subitem {
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
+  max-width: 1080px;
+    padding: 0 40px;
+    margin: 0 auto;
 }
 
 .recipe-item {
   padding: 0 20px;
   margin-top: 28px;
+  width: 33.3%;
 }
 
 .recipe-image {
   cursor: pointer;
-  background: gray;
+  background: #4e4c4c;
   img {
       opacity: 0.4;
       width: 100%;
