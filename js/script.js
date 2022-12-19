@@ -28,13 +28,17 @@ btn.addEventListener('click',() => {
 # recipe
 画像をクリックしたら切り替える設定
 ====================================*/
-const thumbs = document.querySelectorAll('.thumb');
-thumbs.forEach(function(item, index) {
-  item.onclick = function() {
-    document.getElementById('mainimg').src = this.dataset.image;
-    // console.log(this.dataset.image);
-  }
-});
+// const thumbs = document.querySelectorAll('.thumb');
+// thumbs.forEach(function(item, index) {
+//   item.onclick = function() {
+//     document.getElementById('mainimg').src = this.dataset.image;
+//     // console.log(this.dataset.image);
+//   }
+// });
+item.onclick = function (e) {
+  e.preventDefault();
+  document.getElementById('mainimg').src = this.dataset.image;
+}
 
 /*===================================
 # info
@@ -54,9 +58,9 @@ swiper.jsでスライダーを実装
     // 速さ
     speed: 2000,
     // 画面にスライドを何枚表示させるか
-    // slidesPerView: 1,
+    slidesPerView: 3,
     // slidesPerViewと合わせて使う 左右に画像を少し表示するかしないか、デフォルトはfalse
-    // centeredSlides: true,
+    centeredSlides: true,
     // ページネーションの記述
     pagination: {
       el: ".swiper-pagination"
