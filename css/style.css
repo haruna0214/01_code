@@ -839,28 +839,53 @@ main {
 /*===================================#
 kodawari
 ====================================*/
+@media screen and (max-width: 834px) {
+  .kodawari .content-title {
+    padding: 20px 20px;
+  }
+}
 .inner-color {
   background-color: #f0fff1;
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding: 8px 20px 56px;
 }
 
 .kodawari-area {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .kodawari-item {
-  padding: 0 12px;
+  padding: 0 20px;
+  width: 33.3%;
+  text-align: center;
+}
+@media screen and (max-width: 834px) {
+  .kodawari-item {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+}
+
+.kodawari-image img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 834px) {
+  .kodawari-image img {
+    width: 350px;
+  }
 }
 
 .kodawari-text p {
   font-size: 18px;
   text-align: center;
+  margin-top: 12px;
 }
 @media screen and (max-width: 834px) {
   .kodawari-text p {
     white-space: nowrap;
+    margin-top: 4px;
   }
 }
 
