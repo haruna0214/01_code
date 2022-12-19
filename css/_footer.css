@@ -1,0 +1,26 @@
+.footer-inner {
+  padding: 0 40px;
+}
+
+@media screen and (max-width: 834px) {
+  .footer-inner {
+    padding: 0 20px;
+  }
+}
+
+.footer-nav-list {
+  display: flex;
+  margin: 48px 0 16px;
+  color: #186334;
+}
+
+.footer-nav-item {
+  padding-right: 40px;
+  transition: all 0.5s ease-out;
+  font-weight: 600;
+}
+
+.footer-nav-item:hover {
+  transform: scale(1.25);
+  color: #62b380;
+}
