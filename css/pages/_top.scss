@@ -150,9 +150,18 @@ main {
 /*===================================
 # recipe
 ====================================*/
+// .recipe {
+//   padding: 0 40px;
+//   @media screen and (max-width:834px) {
+//     padding: 0 20px;
+//   }
+// }
 .recipe-mainitem img {
   display: block;
   margin: auto;
+  @media screen and (max-width:834px) {
+    display: none;
+  }
 }
 .recipe-subitem {
   display: flex;
@@ -161,12 +170,20 @@ main {
   max-width: 1080px;
   padding: 0 40px;
   margin: 0 auto;
+  @media screen and (max-width:834px) {
+    flex-direction: column;
+  }
 }
 
 .recipe-item {
   padding: 0 20px;
   margin-top: 28px;
   width: 33.3%;
+  @media screen and (max-width:834px) {
+    padding-bottom: 48px;
+    margin: 0 auto;
+    width: 72%;
+  }
 }
 
 .recipe-image {
@@ -179,6 +196,12 @@ main {
       aspect-ratio: 4 / 3;
       object-fit: cover;
     }
+}
+@media screen and (max-width:834px) {
+  .recipe-text {
+    text-align: center;
+    padding-top: 8px;
+  }
 }
 /*===================================#
 kodawari
