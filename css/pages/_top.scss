@@ -159,6 +159,8 @@ main {
 .recipe-mainitem img {
   display: block;
   margin: auto;
+  width: 500px;
+  height: auto;
   @media screen and (max-width:834px) {
     display: none;
   }
